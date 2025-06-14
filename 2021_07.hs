@@ -18,17 +18,17 @@ t = Node 'a' (Node 'b' (Node 'd' EmptyTree EmptyTree) EmptyTree) (Node 'c' Empty
 --   /
 --  d
 
-treeWords :: ???
-treeWords ??? = []
-treeWords (Node v EmptyTree EmptyTree) = [[???]]
-treeWords (Node v l r) = map (v:) (??? ++ ???)
+treeWords :: Tree Char -> [String]
+treeWords EmptyTree = []
+treeWords (Node v EmptyTree EmptyTree) = [[v]]
+treeWords (Node v l r) = map (v:) (wl ++ wr)
  where
-     wl = ???
-     wr = ???
+     wl = treeWords l
+     wr = treeWords r
 
-quickSort :: ???
-quickSort [] = ???
-quickSort (x:xs) = ??? ++ ??? ++ ???
+quickSort :: (Ord a) => [a] -> [a]
+quickSort [] = []
+quickSort (x:xs) = quickSort lesser ++ [x] ++ quickSort greater
  where
-     lesser = filter ???
-     greater = filter ???
+     lesser = filter (<=x) xs -- filter (\ y -> y <= x) xs
+     greater = filter (>x) xs
