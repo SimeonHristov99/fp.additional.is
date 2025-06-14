@@ -13,6 +13,10 @@
 
 <https://www.fmi.uni-sofia.bg/bg/node/7350>
 
+### Cheat sheets
+
+Look in the folder `cheat_sheets`.
+
 ### Functional Programming & Haskell
 
 - [The purest coding style, where bugs are near impossible](https://www.youtube.com/watch?v=HlgG395PQWw)
