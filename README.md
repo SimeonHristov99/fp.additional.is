@@ -2,7 +2,7 @@
 
 ## Plan of attack
 
-1. Go through `notes_haskell.md`. (2 hours)
+1. Go through `notes_haskell.md` with Simo (the file will be uploaded **after** we finish it). (2 hours)
 2. 15 minute break.
 3. Solve the warmup tasks with Simo. (1 hour)
 4. Solve the tasks from the finals in groups. (2 hours)
